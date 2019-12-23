@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Redstage_MenuItem::first_level"
+             title="First Level"
+             module="Redstage_MenuItem"
+             sortOrder="999"
+             resource="Redstage_MenuItem::first_level" />
+ 
+        <add id="Redstage_MenuItem::second_level"
+             title="Second Level"
+             module="Redstage_MenuItem"
+             sortOrder="1"
+             action="menuitem/index/index"
+             parent="Redstage_MenuItem::first_level"
+             resource="Redstage_MenuItem::second_level" />
+    </menu>
+</config>
